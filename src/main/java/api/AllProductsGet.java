@@ -1,7 +1,7 @@
 package api;
 
 
-public class GetAllProducts {
+public class AllProductsGet {
     private String name;
     private String article;
     private String id;
@@ -12,7 +12,7 @@ public class GetAllProducts {
     private String last_qty_changed;
     private String currency;
 
-    public GetAllProducts(String name, String article, String id, String category, Integer price, Integer qty, String insertedAt, String last_qty_changed, String currency) {
+    public AllProductsGet(String name, String article, String id, String category, Integer price, Integer qty, String insertedAt, String last_qty_changed, String currency) {
         this.name = name;
         this.article = article;
         this.id = id;
@@ -22,6 +22,9 @@ public class GetAllProducts {
         this.insertedAt = insertedAt;
         this.last_qty_changed = last_qty_changed;
         this.currency = currency;
+    }
+
+    public AllProductsGet() {
     }
 
     public String toString() {
@@ -35,9 +38,6 @@ public class GetAllProducts {
                 + "last_qty_changed : " + last_qty_changed
                 + "        currency : " + currency;
         return s;
-    }
-
-    public GetAllProducts() {
     }
 
     public String getName() {

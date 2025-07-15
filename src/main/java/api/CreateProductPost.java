@@ -1,6 +1,6 @@
 package api;
 
-public class CreateProduct {
+public class CreateProductPost {
     private String name;
     private String article;
     private String category;
@@ -8,13 +8,15 @@ public class CreateProduct {
     private Integer price;
     private Integer qty;
 
-    public CreateProduct(String name, String article, String category, String dictionary, Integer price, Integer qty) {
+    public CreateProductPost(String name, String article, String category, String dictionary, Integer price, Integer qty) {
         this.name = name;
         this.article = article;
         this.category = category;
         this.dictionary = dictionary;
         this.price = price;
         this.qty = qty;
+    }
+    public CreateProductPost() {
     }
 
 

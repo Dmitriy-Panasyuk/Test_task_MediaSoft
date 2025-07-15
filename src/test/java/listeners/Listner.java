@@ -30,7 +30,7 @@ public class Listner implements ITestListener {
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
-        Log.println("*** Test " + iTestResult.getName() + " skipped", "r");
+        Log.println("*** Test " + iTestResult.getName() + " skipped", "y");
         if (!currentTestNames.contains(iTestResult.getName())) {
             currentTestNames.add(iTestResult.getName());
         }

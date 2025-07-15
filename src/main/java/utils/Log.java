@@ -70,7 +70,7 @@ public class Log {
 
     public static void printFinalTestLog() {
         System.out.print("  " + "=".repeat(finalLogLenth));
-        System.out.println(testLog);
+        System.out.println(getTestFinalLog());
         System.out.println("  " + "=".repeat(finalLogLenth) + "\n");
     }
 
@@ -146,7 +146,7 @@ public class Log {
 
     public static void printTestTitle(String testName) {
         currentTestNames.add(testName);
-        String title = "Start test: " + testName + " | Thread: " + Thread.currentThread().getName();
+        String title = "Start test: " + testName;
         Log.textLevelOFF();
         Log.println("\n" + "-".repeat(title.length()));
         Log.println(title, "p");
