@@ -13,7 +13,7 @@ import static utils.AllureTools.*;
 @Test(priority = 0)
 public class CommonTest {
     @BeforeSuite
-    @Step("До всего")
+    @Step("До выполнения тестов")
     public void beforeSuite() {
         deleteResultDir();
         createResultDir();
@@ -22,7 +22,7 @@ public class CommonTest {
     }
 
     @AfterSuite
-    @Step("После всего")
+    @Step("После выполнения тестов")
     public void afterSuite() throws IOException {
         Log.printFinalTestLog();
         createHTML();

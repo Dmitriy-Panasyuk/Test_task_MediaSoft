@@ -5,13 +5,13 @@ public class FindProductGet {
     private String article;
     private String id;
     private String category;
-    private Integer price;
+    private Double price;
     private Integer qty;
     private String insertedAt;
     private String last_qty_changed;
     private String currency;
 
-    public FindProductGet(String name, String article, String id, String category, Integer price, Integer qty, String insertedAt, String last_qty_changed, String currency) {
+    public FindProductGet(String name, String article, String id, String category, Double price, Integer qty, String insertedAt, String last_qty_changed, String currency) {
         this.name = name;
         this.article = article;
         this.id = id;
@@ -58,11 +58,11 @@ public class FindProductGet {
         this.category = category;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 

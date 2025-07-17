@@ -5,10 +5,10 @@ public class ChangeProductPatch {
     private String name;
     private String category;
     private String dictionary;
-    private double price;
+    private Double price;
     private Integer qty;
 
-    public ChangeProductPatch(String id, String name, String category, String dictionary, double price, Integer qty) {
+    public ChangeProductPatch(String id, String name, String category, String dictionary, Double price, Integer qty) {
         this.id = id;
         this.name = name;
         this.category = category;
@@ -52,11 +52,11 @@ public class ChangeProductPatch {
         this.dictionary = dictionary;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 

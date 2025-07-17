@@ -5,10 +5,10 @@ public class CreateProductPost {
     private String article;
     private String category;
     private String dictionary;
-    private Integer price;
+    private Double price;
     private Integer qty;
 
-    public CreateProductPost(String name, String article, String category, String dictionary, Integer price, Integer qty) {
+    public CreateProductPost(String name, String article, String category, String dictionary, Double price, Integer qty) {
         this.name = name;
         this.article = article;
         this.category = category;
@@ -36,7 +36,7 @@ public class CreateProductPost {
         return dictionary;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return price;
     }
 
