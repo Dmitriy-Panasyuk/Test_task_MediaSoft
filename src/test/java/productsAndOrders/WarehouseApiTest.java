@@ -40,6 +40,7 @@ public class WarehouseApiTest {
     @Severity(CRITICAL)
     @Feature("Smoke тесты")
     @Story("Контроллер создания товаров")
+    @AllureId("TC_001")
     public void createProduct() {
         CreateProductPost body = new CreateProductPost(
                 "Potato",
@@ -47,7 +48,6 @@ public class WarehouseApiTest {
                 "VEGETABLES",
                 "test dict",
                 9000.0,
-                // TODO После изменения qty товара не изменяется время last_qty_changed
                 11);
         CreateProductPostResp product = given()
                 .body(body)
@@ -70,6 +70,7 @@ public class WarehouseApiTest {
     @Severity(NORMAL)
     @Feature("Smoke тесты")
     @Story("Контроллер создания товаров")
+    @AllureId("TC_002")
     public void checkProductsCategory() {
         List<AllProductsGet> products = given().
                 when().
@@ -91,6 +92,7 @@ public class WarehouseApiTest {
     @Severity(CRITICAL)
     @Feature("Smoke тесты")
     @Story("Контроллер создания товаров")
+    @AllureId("TC_003")
     public void updateProduct() {
         ChangeProductPatch body = new ChangeProductPatch(
                 productId,
@@ -99,6 +101,7 @@ public class WarehouseApiTest {
                 // TODO Уточнить необходимость параметра dictionary
                 "New dict",
                 0.01,
+                // TODO После изменения qty товара не изменяется время last_qty_changed
                 22);
         ChangeProductPatchResp product = given()
                 .body(body)
@@ -119,6 +122,7 @@ public class WarehouseApiTest {
     @Severity(NORMAL)
     @Feature("Smoke тесты")
     @Story("Контроллер создания товаров")
+    @AllureId("TC_004")
     public void findProduct() {
         Response product = given()
                 .when()
@@ -134,6 +138,7 @@ public class WarehouseApiTest {
     @Severity(CRITICAL)
     @Feature("Smoke тесты")
     @Story("Контроллер создания товаров")
+    @AllureId("TC_005")
     public void deleteProduct() {
         given()
                 .when()

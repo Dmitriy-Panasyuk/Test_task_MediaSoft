@@ -77,6 +77,7 @@ public class OrdersApiTest {
     @Severity(BLOCKER)
     @Feature("Smoke тесты")
     @Story("Контроллер создания заказов")
+    @AllureId("TC_006")
     public void createOrder() {
         ArrayList<Product> products = new ArrayList<>();
         products.add(new Product(productId, 2));
@@ -102,6 +103,7 @@ public class OrdersApiTest {
     @Severity(CRITICAL)
     @Feature("Smoke тесты")
     @Story("Контроллер создания заказов")
+    @AllureId("TC_007")
     public void updateOrder() {
         ArrayList<Product> products = new ArrayList<>();
         products.add(new Product(productId, 3));
@@ -121,6 +123,7 @@ public class OrdersApiTest {
     @Severity(NORMAL)
     @Feature("Smoke тесты")
     @Story("Контроллер создания заказов")
+    @AllureId("TC_008")
     public void findOrder() {
         Response order = given()
                 .header("customer_id", 123)
@@ -137,6 +140,7 @@ public class OrdersApiTest {
     @Severity(CRITICAL)
     @Feature("Smoke тесты")
     @Story("Контроллер создания заказов")
+    @AllureId("TC_009")
     public void deleteOrder() {
         given()
                 .header("customer_id", 123)
